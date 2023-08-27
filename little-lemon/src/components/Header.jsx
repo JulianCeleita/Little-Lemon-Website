@@ -1,13 +1,16 @@
 import React from "react";
+import css from "./header.css";
 
 export const Header = () => {
   return (
     <header>
-      <div>
-        <img src="/logo.png" alt="Little Lemon Logo" />
-      </div>
-      <nav>
-        <ul>
+      <nav className="navigation">
+        <div className="logo-header">
+          <a href="#">
+            <img src="/logo.png" alt="Little Lemon Logo" />
+          </a>
+        </div>
+        <ul className="nav-links">
           <li>
             <a href="/home">Home</a>
           </li>
