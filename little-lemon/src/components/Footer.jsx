@@ -1,67 +1,64 @@
 import React from "react";
+import css from "./footer.css";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div>
-        <img src="/logo.png" alt="Little Lemon Logo" />
+    <footer className="footer">
+      <div className="column logo-footer">
+        <a href="#">
+          <img src="/logo.png" alt="Little Lemon Logo" />
+        </a>
       </div>
-      <div>
-        <h4>Doormat Navigation</h4>
-        <nav>
-          <ul>
-            <li>
-              <a href="/home">Home</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/menu">Menu</a>
-            </li>
-            <li>
-              <a href="/reservations">Reservations</a>
-            </li>
-            <li>
-              <a href="/order">Order Online</a>
-            </li>
-            <li>
-              <a href="/login">Login</a>
-            </li>
-          </ul>
-        </nav>
+      <div className="column">
+        <h3>Doormat Navigation</h3>
+        <ul className="footer-links">
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/menu">Menu</a>
+          </li>
+          <li>
+            <a href="/reservations">Reservations</a>
+          </li>
+          <li>
+            <a href="/order">Order Online</a>
+          </li>
+          <li>
+            <a href="/login">Login</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <nav>
-          <ul>
-            <li>
-              <a href="/adress">Adress</a>
-            </li>
-            <li>
-              <a href="/phone">Phone Number</a>
-            </li>
-            <li>
-              <a href="/email">Email</a>
-            </li>
-          </ul>
-        </nav>
+      <div className="column">
+        <h3>Contact</h3>
+        <ul className="footer-links">
+          <li>
+            <a href="/adress">Adress</a>
+          </li>
+          <li>
+            <a href="/phone">Phone Number</a>
+          </li>
+          <li>
+            <a href="/email">Email</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h4>Social Media Link</h4>
-        <nav>
-          <ul>
-            <li>
-              <a href="/adress">Adress</a>
-            </li>
-            <li>
-              <a href="/phone">Phone Number</a>
-            </li>
-            <li>
-              <a href="/email">Email</a>
-            </li>
-          </ul>
-        </nav>
+      <div className="column">
+        <h3>Social Media Link</h3>
+        <ul className="footer-links">
+          <li>
+            <a href="/adress">Adress</a>
+          </li>
+          <li>
+            <a href="/phone">Phone Number</a>
+          </li>
+          <li>
+            <a href="/email">Email</a>
+          </li>
+        </ul>
       </div>
     </footer>
   );
