@@ -6,7 +6,7 @@ export const Nav = () => {
     <section>
       <nav className="navigation">
         <div className="logo-header">
-          <a href="#">
+          <a href="/">
             <img src="/logo.png" alt="Little Lemon Logo" />
           </a>
         </div>
@@ -21,7 +21,7 @@ export const Nav = () => {
             <a href="/menu">Menu</a>
           </li>
           <li>
-            <a href="/reservations">Reservations</a>
+            <a href="/booking">Reserve</a>
           </li>
           <li>
             <a href="/order">Order Online</a>
