@@ -1,4 +1,4 @@
-export const Booking = () => {
+export const BookingForm = () => {
   return (
     <div>Booking</div>
   )

@@ -3,7 +3,7 @@ import css from "./footer.css";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <section className="footer">
       <div className="column logo-footer">
         <a href="#">
           <img src="/logo.png" alt="Little Lemon Logo" />
@@ -60,6 +60,6 @@ export const Footer = () => {
           </li>
         </ul>
       </div>
-    </footer>
+    </section>
   );
 };

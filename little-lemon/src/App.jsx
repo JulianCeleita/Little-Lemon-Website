@@ -1,30 +1,12 @@
-import { Footer } from "./components/Footer";
-import { Home } from "./components/Home";
-import { Nav } from "./components/Nav";
-import "./App.css";
-import { CallToAction } from "./components/CallToAction";
-import { Specials } from "./components/Specials";
-import { Testimonials } from "./components/Testimonials";
-import { Chicago } from "./components/Chicago";
-import { Booking } from "./components/Booking";
-import { Main } from "./components/Main";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import {AppRouter} from "./routers/AppRouter";
 function App() {
   return (
-    <>
+    <div className="App">
       <Router>
-        <Nav />
-        <CallToAction />
-        <Specials />
-        <Testimonials />
-        <Chicago />
-        <Booking />
-        <Main />
-        <Home />
-        <Footer />
+        <AppRouter />
       </Router>
-    </>
+    </div>
   );
 }
 

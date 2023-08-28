@@ -3,7 +3,7 @@ import css from "./nav.css";
 
 export const Nav = () => {
   return (
-    <header>
+    <section>
       <nav className="navigation">
         <div className="logo-header">
           <a href="#">
@@ -31,6 +31,6 @@ export const Nav = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </section>
   );
 };
