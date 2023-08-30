@@ -49,3 +49,22 @@
   height: auto;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+
+  .about-container {
+    padding: 0 0 50px 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+  }
+
+  .restaurant-image {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+}
+}
+

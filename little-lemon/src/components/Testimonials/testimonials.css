@@ -50,3 +50,19 @@
   font-size: 1rem;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .testimonials-container {
+  padding: 30px 0 0 0;
+  }
+  
+  .testimonials-content {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #777;
+  }
+}
