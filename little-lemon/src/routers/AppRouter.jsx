@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Chicago } from "../components/Chicago";
 import { Specials } from "../components/Specials/Specials";
-import { Testimonials } from "../components/Testimonials";
+import { Testimonials } from "../components/Testimonials/Testimonials";
 import routes from "../helpers/routes";
 import { BookingPage } from "../pages/BookingPage";
 import { Home } from "../pages/Home";
