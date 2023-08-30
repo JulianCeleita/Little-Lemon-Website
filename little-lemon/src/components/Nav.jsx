@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./nav.css";
+import  "./nav.css";
 
 export const Nav = () => {
   return (

@@ -1,0 +1,85 @@
+.specials-container {
+  background-color: white;
+  color: #555;
+  padding: 50px 0;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #555;
+}
+
+.specials-subtitle {
+  font-size: 2rem;
+}
+
+.menu-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  background-color: #777;
+}
+
+.specials-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.special {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.special-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.special-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.special-price {
+  font-size: 1rem;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.special-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.order-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.order-button:hover {
+  background-color: #777;
+}
