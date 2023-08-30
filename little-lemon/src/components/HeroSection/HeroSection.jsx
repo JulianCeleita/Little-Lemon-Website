@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero-content">
@@ -22,12 +22,10 @@ const HeroSection = () => {
           <img
             src="/littlelemonsite.jpg"
             alt="Little Lemon Restaurant"
-            className="restaurant-image"
+            className="hero-image"
           />
         </div>
       </div>
     </div>
   );
 };
-
-export default HeroSection;

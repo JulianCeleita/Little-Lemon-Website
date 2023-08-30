@@ -15,7 +15,7 @@
 
 .left-column {
   flex: 1;
-  padding-right: 15px;
+  padding-right: 35px;
 }
 
 .title {
@@ -52,11 +52,13 @@
 .right-column {
   flex: 1;
   text-align: right;
+  padding-left: 35px;
 }
 
-.restaurant-image {
+.hero-image {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {

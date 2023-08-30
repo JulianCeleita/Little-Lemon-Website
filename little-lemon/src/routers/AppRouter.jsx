@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { Chicago } from "../components/Chicago";
 import { Specials } from "../components/Specials/Specials";
 import { Testimonials } from "../components/Testimonials/Testimonials";
 import routes from "../helpers/routes";
 import { BookingPage } from "../pages/BookingPage";
 import { Home } from "../pages/Home";
+import { About } from "../components/About/About";
 
 export const AppRouter = () => {
   return (
@@ -14,7 +14,7 @@ export const AppRouter = () => {
       <Route path={routes.specials} element={<Specials />}></Route>
       <Route path={routes.booking} element={<BookingPage />}></Route>
       <Route path={routes.testimonials} element={<Testimonials />}></Route>
-      <Route path={routes.chicago} element={<Chicago />}></Route>
+      <Route path={routes.about} element={<About />}></Route>
     </Routes>
   );
 };

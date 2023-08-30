@@ -4,6 +4,6 @@ const routes = {
     specials: '/specials',
     booking: '/booking',
     testimonials: '/testimonials',
-    chicago: '/chicago'    
+    about: '/about'    
 }
 export default routes;

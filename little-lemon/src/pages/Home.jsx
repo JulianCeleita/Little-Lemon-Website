@@ -1,21 +1,19 @@
 import React from "react";
-import { CallToAction } from "../components/CallToAction";
-import { Chicago } from "../components/Chicago";
-import { Footer } from "../components/Footer";
-import { Nav } from "../components/Nav";
+import { About } from "../components/About/About";
+import { Footer } from "../components/Footer/Footer";
+import { HeroSection } from "../components/HeroSection/HeroSection";
+import { Nav } from "../components/Nav/Nav";
+import { Specials } from "../components/Specials/Specials";
 import { Testimonials } from "../components/Testimonials/Testimonials";
-import HeroSection from "../components/HeroSection";
-import {Specials} from "../components/Specials/Specials";
 
 export const Home = () => {
   return (
     <section>
       <Nav />
       <HeroSection />
-      <Specials/>
-      <CallToAction />
+      <Specials />
       <Testimonials />
-      <Chicago />
+      <About />
       <Footer />
     </section>
   );
