@@ -1,16 +1,51 @@
-import { useState } from "react";
-import css from "./bookingForm.css";
+import { useEffect, useState } from "react";
+import "./bookingForm.css";
+import { fetchAPI } from "https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js";
 
-export const BookingForm = () => {
+export const BookingForm = (props) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("Birthday");
+  const [availableTimes, setAvailableTimes] = useState([]);
 
-  const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  const initializeTimes = async () => {
+    const today = new Date();
+    const formattedDate = today.toISOString().split("T")[0]; // Format date as YYYY-MM-DD
+    const times = await fetchAPI(formattedDate);
+    setAvailableTimes(times);
+  };
+  
+  //This function will change the availableTimes based on the selected date.
+  const updateTimes = async (selectedDate) => {
+    const times = await fetchAPI(selectedDate);
+    setAvailableTimes(times);
+    setDate(selectedDate);
+  };
+
+  useEffect(() => {
+    initializeTimes();
+  }, []);
+  
+  /* const [availableTimes, dispatch] = useReducer(
+    (state, action) => {
+      switch (action.type) {
+        case "UPDATE_TIMES":
+          return updateTimes(action.selectedDate);
+        default:
+          return state;
+      }
+    },
+    [],
+    initializeTimes
+  ); */
+
+
 
   const handleDateChange = (event) => {
-    setDate(event.target.value);
+    const selectedDate = event.target.value;
+    setAvailableTimes({ type: "UPDATE_TIMES", selectedDate });
+    setDate(selectedDate);
   };
 
   const handleTimeChange = (event) => {
@@ -23,6 +58,17 @@ export const BookingForm = () => {
 
   const handleOccasionChange = (event) => {
     setOccasion(event.target.value);
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion,
+    };
+    props.submitForm(formData);
   };
 
   return (
